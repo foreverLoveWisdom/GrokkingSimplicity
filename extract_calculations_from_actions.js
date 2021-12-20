@@ -73,11 +73,11 @@ function calcTotal(cart) {
 }
 
 function addItemToCart(name, price) {
-  shoppingCart = addItems(shoppingCart, name, price);
+  shoppingCart = addItem(shoppingCart, name, price);
   calcCartTotal();
 }
 
-function addItems(cart, name, price) {
+function addItem(cart, name, price) {
   var newCart = cart.slice();
 
   newCart.push({
